@@ -50,119 +50,79 @@ merged_df = pd.merge(neighborhood_data, crime_data,
 
 print(f"Successfully merged {len(merged_df)} neighborhoods")
 
-# Select numeric columns for correlation analysis
-numeric_columns = [
-    # Demographic indicators
-    'Total_Population',
-    'Youth_Ratio',
-    'Working_Age_Ratio',
-    'Senior_Ratio',
-    'Average_Age',
-    'Median_Age',
-    
-    # Income indicators
-    'Median_Income_2020',
-    'Average_Income_2020',
-    'Median_After_Tax_Income_2020',
-    'Average_After_Tax_Income_2020',
-    
-    # Crime counts
-    'ASSAULT_2020',
-    'AUTOTHEFT_2020',
-    'BIKETHEFT_2020',
-    'BREAKENTER_2020',
-    'HOMICIDE_2020',
-    'ROBBERY_2020',
-    'SHOOTING_2020',
-    'THEFTFROMMV_2020',
-    'THEFTOVER_2020',
-    'TOTAL_CRIME_COUNT',
-    
-    # Crime rates
-    'ASSAULT_RATE_2020',
-    'AUTOTHEFT_RATE_2020',
-    'BIKETHEFT_RATE_2020',
-    'BREAKENTER_RATE_2020',
-    'HOMICIDE_RATE_2020',
-    'ROBBERY_RATE_2020',
-    'SHOOTING_RATE_2020',
-    'THEFTFROMMV_RATE_2020',
-    'THEFTOVER_RATE_2020'
-]
+# Define crime types to analyze (both counts and rates)
+crime_types = {
+    'ASSAULT_2020': 'ASSAULT_RATE_2020',
+    'AUTOTHEFT_2020': 'AUTOTHEFT_RATE_2020',
+    'BIKETHEFT_2020': 'BIKETHEFT_RATE_2020',
+    'BREAKENTER_2020': 'BREAKENTER_RATE_2020',
+    'ROBBERY_2020': 'ROBBERY_RATE_2020',
+    'THEFTFROMMV_2020': 'THEFTFROMMV_RATE_2020',
+    'THEFTOVER_2020': 'THEFTOVER_RATE_2020'
+}
 
-print("\nShape of merged dataframe:", merged_df.shape)
-print("\nColumns in merged dataframe:", merged_df.columns.tolist())
+# Create correlation matrix for counts
+count_columns = list(crime_types.keys())
+count_corr = merged_df[count_columns].corr()
 
-# Verify all columns exist in merged dataframe
-missing_columns = [col for col in numeric_columns if col not in merged_df.columns]
-if missing_columns:
-    print("\nWarning: Missing columns:", missing_columns)
-    numeric_columns = [col for col in numeric_columns if col in merged_df.columns]
+# Create correlation matrix for rates
+rate_columns = list(crime_types.values())
+rate_corr = merged_df[rate_columns].corr()
 
-# Calculate correlation matrix
-correlation_matrix = merged_df[numeric_columns].corr()
-
-# Create a figure with a larger size
-plt.figure(figsize=(20, 16))
-
-# Create heatmap
-sns.heatmap(correlation_matrix, 
-            annot=True,  # Show correlation values
-            cmap='RdBu',  # Red-Blue colormap
-            center=0,     # Center the colormap at 0
-            fmt='.2f',   # Format correlation values to 2 decimal places
-            square=True,  # Make cells square
-            cbar_kws={"shrink": .5})  # Adjust colorbar size
-
-# Rotate x-axis labels for better readability
-plt.xticks(rotation=45, ha='right')
-plt.yticks(rotation=0)
-
-# Adjust layout to prevent label cutoff
+# Create and save count correlation matrix plot
+plt.figure(figsize=(10, 8))
+sns.heatmap(count_corr, 
+            annot=True, 
+            cmap='coolwarm', 
+            center=0,
+            fmt='.2f',
+            square=True)
+plt.title('Correlation Matrix - Crime Counts')
 plt.tight_layout()
+plt.savefig('output/correlational_matrix/crime_counts_correlation_matrix.png', dpi=300, bbox_inches='tight')
+plt.close()
 
-# Save the plot
-plt.savefig('cleaned_data/correlation_matrix/correlation_matrix.png', dpi=300, bbox_inches='tight')
+# Create and save rate correlation matrix plot
+plt.figure(figsize=(10, 8))
+sns.heatmap(rate_corr, 
+            annot=True, 
+            cmap='coolwarm', 
+            center=0,
+            fmt='.2f',
+            square=True)
+plt.title('Correlation Matrix - Crime Rates')
+plt.tight_layout()
+plt.savefig('output/correlational_matrix/crime_rates_correlation_matrix.png', dpi=300, bbox_inches='tight')
+plt.close()
 
-# Print some key findings
-print("\nKey Correlations with Total Crime Count:")
-total_crime_corr = correlation_matrix['TOTAL_CRIME_COUNT'].sort_values(ascending=False)
-print(total_crime_corr)
+# Save correlation matrices to CSV
+count_corr.to_csv('output/correlational_matrix/crime_counts_correlation_matrix.csv')
+rate_corr.to_csv('output/correlational_matrix/crime_rates_correlation_matrix.csv')
 
-# Calculate average correlations for demographic and socioeconomic factors with crime rates
-demographic_vars = ['Youth_Ratio', 'Working_Age_Ratio', 'Senior_Ratio', 'Average_Age', 'Median_Age']
-income_vars = ['Median_Income_2020', 'Average_Income_2020', 'Median_After_Tax_Income_2020', 'Average_After_Tax_Income_2020']
-crime_rates = [col for col in numeric_columns if 'RATE' in col]
-
-print("\nAverage correlation between demographic factors and crime rates:")
-for demo_var in demographic_vars:
-    avg_corr = correlation_matrix.loc[demo_var, crime_rates].mean()
-    print(f"{demo_var}: {avg_corr:.3f}")
-
-print("\nAverage correlation between income factors and crime rates:")
-for income_var in income_vars:
-    avg_corr = correlation_matrix.loc[income_var, crime_rates].mean()
-    print(f"{income_var}: {avg_corr:.3f}")
-
-# Save detailed correlations to CSV
-correlation_matrix.to_csv('cleaned_data/correlation_matrix.csv')
-
-# Print some example correlations
-print("\nStrong correlations (|r| > 0.5):")
-strong_correlations = []
-for i in range(len(correlation_matrix.columns)):
-    for j in range(i+1, len(correlation_matrix.columns)):
-        corr = correlation_matrix.iloc[i, j]
+# Print summary of strongest correlations
+print("\nStrongest correlations in crime counts (|r| > 0.5):")
+for i in range(len(count_columns)):
+    for j in range(i+1, len(count_columns)):
+        corr = count_corr.iloc[i, j]
         if abs(corr) > 0.5:
-            strong_correlations.append((
-                correlation_matrix.columns[i],
-                correlation_matrix.columns[j],
-                corr
-            ))
+            print(f"{count_columns[i]} vs {count_columns[j]}: {corr:.3f}")
 
-# Sort by absolute correlation value
-strong_correlations.sort(key=lambda x: abs(x[2]), reverse=True)
+print("\nStrongest correlations in crime rates (|r| > 0.5):")
+for i in range(len(rate_columns)):
+    for j in range(i+1, len(rate_columns)):
+        corr = rate_corr.iloc[i, j]
+        if abs(corr) > 0.5:
+            print(f"{rate_columns[i]} vs {rate_columns[j]}: {corr:.3f}")
 
-# Print top 10 strongest correlations
-for var1, var2, corr in strong_correlations[:10]:
-    print(f"{var1} vs {var2}: {corr:.3f}")
+# Calculate and print average correlations
+print("\nAverage correlations:")
+print(f"Count correlations: {count_corr.values[np.triu_indices_from(count_corr.values, k=1)].mean():.3f}")
+print(f"Rate correlations: {rate_corr.values[np.triu_indices_from(rate_corr.values, k=1)].mean():.3f}")
+
+# Calculate and print correlation differences
+print("\nCorrelation differences (Rate - Count):")
+for count_col, rate_col in crime_types.items():
+    count_corr_with_others = count_corr[count_col].drop(count_col).mean()
+    rate_corr_with_others = rate_corr[rate_col].drop(rate_col).mean()
+    diff = rate_corr_with_others - count_corr_with_others
+    print(f"{count_col}: {diff:.3f}")

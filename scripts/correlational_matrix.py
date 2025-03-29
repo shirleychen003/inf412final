@@ -122,7 +122,7 @@ plt.yticks(rotation=0)
 plt.tight_layout()
 
 # Save the plot
-plt.savefig('cleaned_data/correlation_matrix.png', dpi=300, bbox_inches='tight')
+plt.savefig('cleaned_data/correlation_matrix/correlation_matrix.png', dpi=300, bbox_inches='tight')
 
 # Print some key findings
 print("\nKey Correlations with Total Crime Count:")

@@ -1,0 +1,141 @@
+neighbourhood_name,neighbourhood_id,tsns_designation,total_population,low_income_percent,is_improvement_area,Reconciled_Neighbourhood
+Agincourt North,129,No Designation,29113,21.3,0,Agincourt North
+Agincourt South-Malvern West,128,No Designation,23757,22.6,0,Agincourt South-Malvern West
+Alderwood,20,No Designation,12054,8.2,0,Alderwood
+Annex,95,No Designation,30526,18.3,0,Annex
+Banbury-Don Mills,42,No Designation,27695,13.7,0,Banbury-Don Mills
+Bathurst Manor,34,No Designation,15873,17.0,0,Bathurst Manor
+Bay Street Corridor,76,No Designation,25797,37.7,0,Bay Street Corridor
+Bayview Village,52,No Designation,21396,23.7,0,Bayview Village
+Bayview Woods-Steeles,49,No Designation,13154,18.4,0,Bayview Woods-Steeles
+Bedford Park-Nortown,39,No Designation,23236,9.4,0,Bedford Park-Nortown
+Beechborough-Greenbrook,112,NIA,6577,28.0,1,Beechborough-Greenbrook
+Bendale,127,No Designation,29960,23.4,0,Bendale
+Birchcliffe-Cliffside,122,No Designation,22291,14.5,0,Birchcliffe-Cliffside
+Black Creek,24,NIA,21737,33.0,1,Black Creek
+Blake-Jones,69,No Designation,7727,24.5,0,Blake-Jones
+Briar Hill-Belgravia,108,No Designation,14257,17.0,0,Briar Hill-Belgravia
+Bridle Path-Sunnybrook-York Mills,41,No Designation,9266,8.8,0,Bridle Path-Sunnybrook-York Mills
+Broadview North,57,No Designation,11499,22.6,0,Broadview North
+Brookhaven-Amesbury,30,No Designation,17757,24.7,0,Brookhaven-Amesbury
+Cabbagetown-South St. James Town,71,No Designation,11669,20.8,0,Cabbagetown-South St. James Town
+Caledonia-Fairbank,109,No Designation,9955,14.2,0,Caledonia-Fairbank
+Casa Loma,96,No Designation,10968,12.5,0,Casa Loma
+Centennial Scarborough,133,No Designation,13362,6.2,0,Centennial Scarborough
+Church-Yonge Corridor,75,No Designation,31340,26.0,0,Church-Yonge Corridor
+Clairlea-Birchmount,120,No Designation,26984,19.5,0,Clairlea-Birchmount
+Clanton Park,33,No Designation,16472,14.9,0,Clanton Park
+Cliffcrest,123,No Designation,15935,17.9,0,Cliffcrest
+Corso Italia-Davenport,92,No Designation,14133,13.4,0,Corso Italia-Davenport
+Danforth,66,No Designation,9666,14.2,0,Danforth
+Danforth East York,59,No Designation,17180,13.6,0,Danforth East York
+Don Valley Village,47,No Designation,27051,23.5,0,Don Valley Village
+Dorset Park,126,Emerging Neighbourhood,25003,22.3,0,Dorset Park
+Dovercourt-Wallace Emerson-Junction,93,No Designation,36625,17.1,0,Dovercourt-Wallace Emerson-Junction
+Downsview-Roding-CFB,26,NIA,35052,19.4,1,Downsview-Roding-CFB
+Dufferin Grove,83,No Designation,11785,18.0,0,Dufferin Grove
+East End-Danforth,62,No Designation,21381,18.8,0,East End-Danforth
+Edenbridge-Humber Valley,9,No Designation,15535,10.5,0,Edenbridge-Humber Valley
+Eglinton East,138,NIA,22776,26.0,1,Eglinton East
+Elms-Old Rexdale,5,NIA,9456,23.2,1,Elms-Old Rexdale
+Englemount-Lawrence,32,Emerging Neighbourhood,22372,21.3,0,Englemount-Lawrence
+Eringate-Centennial-West Deane,11,No Designation,18588,9.7,0,Eringate-Centennial-West Deane
+Etobicoke West Mall,13,No Designation,11848,18.3,0,Etobicoke West Mall
+Flemingdon Park,44,NIA,21933,34.7,1,Flemingdon Park
+Forest Hill North,102,No Designation,12806,15.5,0,Forest Hill North
+Forest Hill South,101,No Designation,10732,10.7,0,Forest Hill South
+Glenfield-Jane Heights,25,NIA,30491,25.7,1,Glenfield-Jane Heights
+Greenwood-Coxwell,65,No Designation,14417,19.7,0,Greenwood-Coxwell
+Guildwood,140,No Designation,9917,7.7,0,Guildwood
+Henry Farm,53,No Designation,15723,29.6,0,Henry Farm
+High Park North,88,No Designation,22162,16.5,0,High Park North
+High Park-Swansea,87,No Designation,23925,11.1,0,High Park-Swansea
+Highland Creek,134,No Designation,12494,10.5,0,Highland Creek
+Hillcrest Village,48,No Designation,16934,21.9,0,Hillcrest Village
+Humber Heights-Westmount,8,Emerging Neighbourhood,10948,14.6,0,Humber Heights-Westmount
+Humber Summit,21,NIA,12416,19.7,1,Humber Summit
+Humbermede,22,NIA,15545,22.7,1,Humbermede
+Humewood-Cedarvale,106,No Designation,14365,15.7,0,Humewood-Cedarvale
+Ionview,125,NIA,13641,23.3,1,Ionview
+Islington-City Centre West,14,No Designation,43965,15.8,0,Islington-City Centre West
+Junction Area,90,No Designation,14366,13.5,0,Junction Area
+Keelesdale-Eglinton West,110,NIA,11058,18.3,1,Keelesdale-Eglinton West
+Kennedy Park,124,NIA,17123,26.3,1,Kennedy Park
+Kensington-Chinatown,78,No Designation,17945,33.2,0,Kensington-Chinatown
+Kingsview Village-The Westway,6,NIA,22000,24.9,1,Kingsview Village-The Westway
+Kingsway South,15,No Designation,9271,4.5,0,Kingsway South
+Lambton Baby Point,114,No Designation,7985,18.5,0,Lambton Baby Point
+L'Amoreaux,117,Emerging Neighbourhood,43993,23.5,0,L'Amoreaux
+Lansing-Westgate,38,No Designation,16164,17.6,0,Lansing-Westgate
+Lawrence Park North,105,No Designation,14607,6.7,0,Lawrence Park North
+Lawrence Park South,103,No Designation,15179,7.3,0,Lawrence Park South
+Leaside-Bennington,56,No Designation,16828,6.9,0,Leaside-Bennington
+Little Portugal,84,No Designation,15559,15.6,0,Little Portugal
+Long Branch,19,No Designation,10084,17.6,0,Long Branch
+Malvern,132,Emerging Neighbourhood,43794,20.4,0,Malvern
+Maple Leaf,29,No Designation,10111,15.2,0,Maple Leaf
+Markland Wood,12,No Designation,10554,8.3,0,Markland Wood
+Milliken,130,No Designation,26572,22.1,0,Milliken
+Mimico (includes Humber Bay Shores),17,No Designation,33964,18.2,0,Mimico (includes Humber Bay Shores)
+Morningside,135,NIA,17455,23.8,1,Morningside
+Moss Park,73,No Designation,20506,31.9,0,Moss Park
+Mount Dennis,115,NIA,13593,25.3,1,Mount Dennis
+Mount Olive-Silverstone-Jamestown,2,NIA,32954,27.9,1,Mount Olive-Silverstone-Jamestown
+Mount Pleasant East,99,No Designation,16775,10.3,0,Mount Pleasant East
+Mount Pleasant West,104,No Designation,29658,20.8,0,Mount Pleasant West
+New Toronto,18,No Designation,11463,24.8,0,New Toronto
+Newtonbrook East,50,No Designation,16097,27.4,0,Newtonbrook East
+Newtonbrook West,36,No Designation,23831,26.3,0,Newtonbrook West
+Niagara,82,No Designation,31180,13.7,0,Niagara
+North Riverdale,68,No Designation,11916,10.9,0,North Riverdale
+North St. James Town,74,No Designation,18615,36.5,0,North St. James Town
+Oakridge,121,NIA,13845,42.6,1,Oakridge
+Oakwood Village,107,No Designation,21210,18.6,0,Oakwood Village
+O'Connor-Parkview,54,No Designation,18675,22.5,0,O'Connor-Parkview
+Old East York,58,No Designation,9233,13.5,0,Old East York
+Palmerston-Little Italy,80,No Designation,13826,13.8,0,Palmerston-Little Italy
+Parkwoods-Donalda,45,No Designation,34805,20.6,0,Parkwoods-Donalda
+Pelmo Park-Humberlea,23,No Designation,10722,11.4,0,Pelmo Park-Humberlea
+Playter Estates-Danforth,67,No Designation,7804,13.6,0,Playter Estates-Danforth
+Pleasant View,46,No Designation,15818,17.5,0,Pleasant View
+Princess-Rosethorn,10,No Designation,11051,7.2,0,Princess-Rosethorn
+Regent Park,72,NIA,10803,42.3,1,Regent Park
+Rexdale-Kipling,4,No Designation,10529,18.6,0,Rexdale-Kipling
+Rockcliffe-Smythe,111,NIA,22246,22.8,1,Rockcliffe-Smythe
+Roncesvalles,86,No Designation,14974,19.9,0,Roncesvalles
+Rosedale-Moore Park,98,No Designation,20923,10.2,0,Rosedale-Moore Park
+Rouge,131,No Designation,46496,9.5,0,Rouge
+Runnymede-Bloor West Village,89,No Designation,10070,6.9,0,Runnymede-Bloor West Village
+Rustic,28,NIA,9941,31.7,1,Rustic
+Scarborough Village,139,NIA,16724,32.4,1,Scarborough Village
+South Parkdale,85,NIA,21849,30.5,1,South Parkdale
+South Riverdale,70,No Designation,27876,18.7,0,South Riverdale
+St.Andrew-Windfields,40,No Designation,17812,15.9,0,St.Andrew-Windfields
+Steeles,116,Emerging Neighbourhood,24623,21.0,0,Steeles
+Stonegate-Queensway,16,No Designation,25051,11.6,0,Stonegate-Queensway
+Tam O'Shanter-Sullivan,118,No Designation,27446,23.8,0,Tam O'Shanter-Sullivan
+Taylor-Massey,61,NIA,15683,32.9,1,Taylor-Massey
+The Beaches,63,No Designation,21567,9.4,0,The Beaches
+Thistletown-Beaumond Heights,3,NIA,10360,17.8,1,Thistletown-Beaumond Heights
+Thorncliffe Park,55,NIA,21108,45.5,1,Thorncliffe Park
+Trinity-Bellwoods,81,No Designation,16556,14.7,0,Trinity-Bellwoods
+University,79,No Designation,7607,22.4,0,University
+Victoria Village,43,NIA,17510,25.9,1,Victoria Village
+Waterfront Communities-The Island,77,No Designation,65913,16.5,0,Waterfront Communities-The Island
+West Hill,136,NIA,27392,25.2,1,West Hill
+West Humber-Clairville,1,No Designation,33312,15.8,0,West Humber-Clairville
+Westminster-Branson,35,Emerging Neighbourhood,26274,24.4,0,Westminster-Branson
+Weston,113,NIA,17992,29.6,1,Weston
+Weston-Pelham Park,91,NIA,11098,20.4,1,Weston-Pelham Park
+Wexford/Maryvale,119,No Designation,27917,19.2,0,Wexford/Maryvale
+Willowdale East,51,No Designation,50434,30.3,0,Willowdale East
+Willowdale West,37,No Designation,16936,27.1,0,Willowdale West
+Willowridge-Martingrove-Richview,7,No Designation,22156,15.0,0,Willowridge-Martingrove-Richview
+Woburn,137,NIA,53485,27.2,1,Woburn
+Woodbine Corridor,64,No Designation,12541,15.8,0,Woodbine Corridor
+Woodbine-Lumsden,60,No Designation,7865,15.2,0,Woodbine-Lumsden
+Wychwood,94,No Designation,14349,16.7,0,Wychwood
+Yonge-Eglinton,100,No Designation,11817,12.0,0,Yonge-Eglinton
+Yonge-St.Clair,97,No Designation,12528,12.9,0,Yonge-St.Clair
+York University Heights,27,NIA,27593,24.4,1,York University Heights
+Yorkdale-Glen Park,31,Emerging Neighbourhood,14804,16.8,0,Yorkdale-Glen Park

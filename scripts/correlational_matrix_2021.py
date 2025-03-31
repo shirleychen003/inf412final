@@ -77,12 +77,14 @@ corr_2016 = merged_2016[crime_cols_2016].corr()
 
 # Create and save 2016 correlation matrix plot
 plt.figure(figsize=(12, 10))
+mask = np.triu(np.ones_like(corr_2016, dtype=bool))
 sns.heatmap(corr_2016, 
             annot=True, 
             cmap='coolwarm', 
             center=0,
             fmt='.2f',
-            square=True)
+            square=True,
+            mask=mask)
 plt.title('Correlation Matrix - Crime Types (2016)', fontsize=16)
 plt.tight_layout()
 plt.savefig('output/correlational_matrix/correlation_2016.png', dpi=300, bbox_inches='tight')
@@ -93,12 +95,14 @@ corr_2021 = merged_2021[crime_cols_2021].corr()
 
 # Create and save 2021 correlation matrix plot
 plt.figure(figsize=(12, 10))
+mask = np.triu(np.ones_like(corr_2021, dtype=bool))
 sns.heatmap(corr_2021, 
             annot=True, 
             cmap='coolwarm', 
             center=0,
             fmt='.2f',
-            square=True)
+            square=True,
+            mask=mask)
 plt.title('Correlation Matrix - Crime Types (2021)', fontsize=16)
 plt.tight_layout()
 plt.savefig('output/correlational_matrix/correlation_2021.png', dpi=300, bbox_inches='tight')
@@ -120,12 +124,14 @@ corr_diff = corr_2021_clean - corr_2016_clean
 
 # Create and save correlation change heatmap
 plt.figure(figsize=(12, 10))
+mask = np.triu(np.ones_like(corr_diff, dtype=bool))
 sns.heatmap(corr_diff, 
             annot=True, 
             cmap='coolwarm', 
             center=0,
             fmt='.2f',
-            square=True)
+            square=True,
+            mask=mask)
 plt.title('Change in Correlation Between Crime Types (2021 - 2016)', fontsize=16)
 plt.tight_layout()
 plt.savefig('output/correlational_matrix/correlation_change.png', dpi=300, bbox_inches='tight')
@@ -154,4 +160,4 @@ print(f"2016: {np.abs(corr_2016.values[np.triu_indices_from(corr_2016.values, k=
 print(f"2021: {np.abs(corr_2021.values[np.triu_indices_from(corr_2021.values, k=1)]).mean():.3f}")
 print(f"Change: {np.abs(corr_2021.values[np.triu_indices_from(corr_2021.values, k=1)]).mean() - np.abs(corr_2016.values[np.triu_indices_from(corr_2016.values, k=1)]).mean():.3f}")
 
-print("\nCorrelational matrix analysis complete - all files saved to output/correlational_matrix directory") 
+print("\nCorrelational matrix analysis complete - all files saved to output/correlational_matrix directory")

@@ -1,8 +1,0 @@
-Crime Type,R-squared,Coefficients
-ASSAULT,0.5028878290808949,"{'total_population': np.float64(0.006910352531021931), 'low_income_percent': np.float64(3.188942048924189), 'is_improvement_area': np.float64(25.700465007443903)}"
-AUTOTHEFT,0.21140040789418457,"{'total_population': np.float64(0.002334359929356032), 'low_income_percent': np.float64(-0.5654109181583625), 'is_improvement_area': np.float64(9.191211685581091)}"
-BIKETHEFT,0.11846331641516394,"{'total_population': np.float64(0.0005225251954189887), 'low_income_percent': np.float64(0.8982072939137327), 'is_improvement_area': np.float64(-25.427782761146396)}"
-BREAKENTER,0.41765375803285765,"{'total_population': np.float64(0.002533783809072121), 'low_income_percent': np.float64(0.29283517227600686), 'is_improvement_area': np.float64(-14.338903950760004)}"
-ROBBERY,0.38494554451235163,"{'total_population': np.float64(0.001704565486753727), 'low_income_percent': np.float64(0.3460430701644849), 'is_improvement_area': np.float64(7.2482375719375955)}"
-THEFTFROMMV,0.21620240790680167,"{'total_population': np.float64(0.0029541614924480136), 'low_income_percent': np.float64(2.2206705482465794), 'is_improvement_area': np.float64(-32.919423150991875)}"
-THEFTOVER,0.25991572873142577,"{'total_population': np.float64(0.0005065755242893822), 'low_income_percent': np.float64(0.04879033818976507), 'is_improvement_area': np.float64(-0.6991877717263921)}"

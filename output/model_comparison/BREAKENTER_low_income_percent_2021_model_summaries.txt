@@ -1,0 +1,49 @@
+LINEAR MODEL SUMMARY
+====================
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:        BREAKENTER_2021   R-squared:                       0.090
+Model:                            OLS   Adj. R-squared:                  0.084
+Method:                 Least Squares   F-statistic:                     15.06
+Date:                Tue, 01 Apr 2025   Prob (F-statistic):           0.000155
+Time:                        01:14:53   Log-Likelihood:                -740.69
+No. Observations:                 154   AIC:                             1485.
+Df Residuals:                     152   BIC:                             1491.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+======================================================================================
+                         coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+Intercept              8.9848      7.280      1.234      0.219      -5.399      23.368
+low_income_percent     2.0748      0.535      3.880      0.000       1.018       3.131
+==============================================================================
+Omnibus:                       76.799   Durbin-Watson:                   1.746
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              245.836
+Skew:                           2.030   Prob(JB):                     4.14e-54
+Kurtosis:                       7.672   Cond. No.                         41.4
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+NEGATIVE BINOMIAL MODEL SUMMARY
+===============================
+
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:        BREAKENTER_2021   No. Observations:                  154
+Model:                            GLM   Df Residuals:                      152
+Model Family:        NegativeBinomial   Df Model:                            1
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -701.59
+Date:                Tue, 01 Apr 2025   Deviance:                       73.413
+Time:                        01:14:53   Pearson chi2:                     91.8
+No. Iterations:                     6   Pseudo R-squ. (CS):            0.06131
+Covariance Type:            nonrobust                                         
+======================================================================================
+                         coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+Intercept              2.8066      0.247     11.344      0.000       2.322       3.292
+low_income_percent     0.0572      0.018      3.153      0.002       0.022       0.093
+======================================================================================

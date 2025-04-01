@@ -1,0 +1,51 @@
+LINEAR MODEL SUMMARY
+====================
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:        BREAKENTER_2021   R-squared:                       0.203
+Model:                            OLS   Adj. R-squared:                  0.198
+Method:                 Least Squares   F-statistic:                     38.73
+Date:                Tue, 01 Apr 2025   Prob (F-statistic):           4.52e-09
+Time:                        01:14:51   Log-Likelihood:                -730.49
+No. Observations:                 154   AIC:                             1465.
+Df Residuals:                     152   BIC:                             1471.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+====================================================================================
+                       coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------
+Intercept           -4.3003      6.803     -0.632      0.528     -17.740       9.140
+total_population     0.0023      0.000      6.223      0.000       0.002       0.003
+==============================================================================
+Omnibus:                       77.281   Durbin-Watson:                   1.448
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              271.658
+Skew:                           1.984   Prob(JB):                     1.02e-59
+Kurtosis:                       8.156   Cond. No.                     5.61e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 5.61e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+NEGATIVE BINOMIAL MODEL SUMMARY
+===============================
+
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:        BREAKENTER_2021   No. Observations:                  154
+Model:                            GLM   Df Residuals:                      152
+Model Family:        NegativeBinomial   Df Model:                            1
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -695.46
+Date:                Tue, 01 Apr 2025   Deviance:                       61.142
+Time:                        01:14:51   Pearson chi2:                     79.5
+No. Iterations:                     5   Pseudo R-squ. (CS):             0.1332
+Covariance Type:            nonrobust                                         
+====================================================================================
+                       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------
+Intercept            2.4200      0.248      9.766      0.000       1.934       2.906
+total_population  6.159e-05   1.33e-05      4.635      0.000    3.55e-05    8.76e-05
+====================================================================================

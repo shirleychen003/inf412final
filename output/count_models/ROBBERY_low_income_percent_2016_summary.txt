@@ -1,0 +1,41 @@
+POISSON MODEL SUMMARY
+======================
+
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:           ROBBERY_2016   No. Observations:                  122
+Model:                            GLM   Df Residuals:                      120
+Model Family:                 Poisson   Df Model:                            1
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -1050.9
+Date:                Tue, 01 Apr 2025   Deviance:                       1540.2
+Time:                        02:01:58   Pearson chi2:                 1.82e+03
+No. Iterations:                     5   Pseudo R-squ. (CS):             0.8858
+Covariance Type:            nonrobust                                         
+======================================================================================
+                         coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+Intercept              2.3782      0.051     46.851      0.000       2.279       2.478
+low_income_percent     0.0366      0.002     16.830      0.000       0.032       0.041
+======================================================================================
+
+NEGATIVE BINOMIAL MODEL SUMMARY
+===============================
+
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:           ROBBERY_2016   No. Observations:                  122
+Model:                            GLM   Df Residuals:                      120
+Model Family:        NegativeBinomial   Df Model:                            1
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -498.82
+Date:                Tue, 01 Apr 2025   Deviance:                       70.217
+Time:                        02:01:58   Pearson chi2:                     72.9
+No. Iterations:                     7   Pseudo R-squ. (CS):             0.1052
+Covariance Type:            nonrobust                                         
+======================================================================================
+                         coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+Intercept              2.1680      0.244      8.884      0.000       1.690       2.646
+low_income_percent     0.0469      0.012      3.998      0.000       0.024       0.070
+======================================================================================

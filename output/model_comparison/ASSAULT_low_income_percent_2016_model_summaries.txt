@@ -1,0 +1,49 @@
+LINEAR MODEL SUMMARY
+====================
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           ASSAULT_2016   R-squared:                       0.254
+Model:                            OLS   Adj. R-squared:                  0.247
+Method:                 Least Squares   F-statistic:                     40.80
+Date:                Tue, 01 Apr 2025   Prob (F-statistic):           3.34e-09
+Time:                        01:14:48   Log-Likelihood:                -696.67
+No. Observations:                 122   AIC:                             1397.
+Df Residuals:                     120   BIC:                             1403.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+======================================================================================
+                         coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+Intercept              5.0955     17.494      0.291      0.771     -29.542      39.733
+low_income_percent     5.3983      0.845      6.387      0.000       3.725       7.072
+==============================================================================
+Omnibus:                       49.207   Durbin-Watson:                   1.678
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              116.912
+Skew:                           1.630   Prob(JB):                     4.10e-26
+Kurtosis:                       6.518   Cond. No.                         54.4
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+NEGATIVE BINOMIAL MODEL SUMMARY
+===============================
+
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:           ASSAULT_2016   No. Observations:                  122
+Model:                            GLM   Df Residuals:                      120
+Model Family:        NegativeBinomial   Df Model:                            1
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -683.46
+Date:                Tue, 01 Apr 2025   Deviance:                       41.214
+Time:                        01:14:48   Pearson chi2:                     46.9
+No. Iterations:                     8   Pseudo R-squ. (CS):             0.1618
+Covariance Type:            nonrobust                                         
+======================================================================================
+                         coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+Intercept              3.4655      0.239     14.499      0.000       2.997       3.934
+low_income_percent     0.0591      0.012      5.128      0.000       0.037       0.082
+======================================================================================

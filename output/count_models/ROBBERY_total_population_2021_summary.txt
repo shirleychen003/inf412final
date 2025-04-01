@@ -1,0 +1,41 @@
+POISSON MODEL SUMMARY
+======================
+
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:           ROBBERY_2021   No. Observations:                  154
+Model:                            GLM   Df Residuals:                      152
+Model Family:                 Poisson   Df Model:                            1
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -926.37
+Date:                Tue, 01 Apr 2025   Deviance:                       1218.8
+Time:                        02:01:58   Pearson chi2:                 1.72e+03
+No. Iterations:                     5   Pseudo R-squ. (CS):             0.9145
+Covariance Type:            nonrobust                                         
+====================================================================================
+                       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------
+Intercept            1.4177      0.071     19.952      0.000       1.278       1.557
+total_population  6.574e-05   3.37e-06     19.534      0.000    5.91e-05    7.23e-05
+====================================================================================
+
+NEGATIVE BINOMIAL MODEL SUMMARY
+===============================
+
+                 Generalized Linear Model Regression Results                  
+==============================================================================
+Dep. Variable:           ROBBERY_2021   No. Observations:                  154
+Model:                            GLM   Df Residuals:                      152
+Model Family:        NegativeBinomial   Df Model:                            1
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -556.07
+Date:                Tue, 01 Apr 2025   Deviance:                       86.509
+Time:                        02:01:58   Pearson chi2:                     120.
+No. Iterations:                     5   Pseudo R-squ. (CS):             0.1456
+Covariance Type:            nonrobust                                         
+====================================================================================
+                       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------
+Intercept            1.4139      0.255      5.548      0.000       0.914       1.913
+total_population  6.597e-05   1.36e-05      4.855      0.000    3.93e-05    9.26e-05
+====================================================================================

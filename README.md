@@ -20,10 +20,28 @@ This project analyzes the relationship between socioeconomic factors and crime r
   - `/2021/` - Cleaned 2021 data
   - `/reconciled_data/` - Matched data across years
 - `/scripts/` - Python scripts for data processing and analysis
-  - Data cleaning scripts (e.g., `clean_2021_neighbourhood_profile_data.py`)
-  - Visualization scripts (e.g., `create_visualizations.py`, `box_plot_2016.py`)
-  - Statistical analysis (e.g., `correlational_matrix.py`, `linear_regression.py`)
-  - Modeling scripts (e.g., `count_models.py`, `model_comparison.py`)
+  - **Data Cleaning Scripts**
+    - `clean_2016_neighbourhood_profile_data.py` - Extracts and cleans neighborhood demographic data from 2016
+    - `clean_2021_neighbourhood_profile_data.py` - Extracts and cleans neighborhood demographic data from 2021
+    - `clean_2016_crime_data.py` - Processes crime statistics from 2016, calculating totals and rates
+    - `clean_2021_crime_data.py` - Processes crime statistics from 2021, calculating totals and rates
+    - `clean_crime_data.py` - General crime data cleaning script for other years
+    - `convert_xlsx.py` - Converts Excel files to CSV format for easier processing
+  - **Data Analysis Scripts**
+    - `correlational_matrix.py` - Generates correlation matrices between socioeconomic factors and crime metrics
+    - `count_model_fitness.py` - Evaluates fitness metrics for count regression models
+    - `count_models.py` - Implements Poisson and negative binomial regression models for crime counts
+    - `linear_regression.py` - Builds linear regression models for various crime types and predictors
+    - `model_check.py` - Performs diagnostic checks on statistical models including posterior predictive checks
+    - `model_comparison.py` - Compares different statistical models for each crime type
+    - `regression_fitness.py` - Evaluates fitness metrics for general regression models
+    - `regression_summary_combined.py` - Creates summary visualizations of regression results across years
+    - `reconcile_neighborhoods.py` - Matches and harmonizes neighborhood data between different years
+  - **Visualization Scripts**
+    - `create_visualizations.py` - Generates a variety of visualizations for exploratory data analysis
+    - `box_plot_2016.py` - Creates box plots for 2016 data showing crime distributions by income group
+    - `box_plot_2021.py` - Creates box plots for 2021 data with comparisons to 2016
+    - `toronto_map.py` - Generates interactive and static maps of Toronto neighborhoods with crime data
 - `/output/` - Generated visualizations and analysis results
   - `/box_plot/` - Boxplots comparing crime types and demographics
   - `/correlational_matrix/` - Correlation heatmaps between variables
@@ -69,6 +87,7 @@ This project analyzes the relationship between socioeconomic factors and crime r
 3. Run regression models:
    ```
    python scripts/linear_regression.py
+   python scripts/count_models.py
    ```
 4. Open the Jupyter notebook to view the complete analysis:
    ```
